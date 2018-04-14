@@ -1,5 +1,5 @@
 const http = require('./departments');
-const cardBuilder = require('./dom');
+const cardBuilder = require('./deptDom');
 
 const successXhr = function () {
   const data = JSON.parse(this.responseText).departments;
