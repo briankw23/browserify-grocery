@@ -1,14 +1,14 @@
 const departmentCards = document.getElementsByClassName('department');
 
 const showDeptName = (e) => {
-  console.log('e',e);
+  // console.log('e',e);
   const departmentImg = e.target.children[1];
   const departmentName = e.target.children[0];
   departmentName.classList.remove('hide');
   departmentImg.classList.add('grey-out');
 };
 const hideDeptName = (e) => {
-  console.log('e',e);
+  // console.log('e',e);
   const departmentImg = e.target.children[1];
   const departmentName = e.target.children[0];
   departmentName.classList.add('hide');
