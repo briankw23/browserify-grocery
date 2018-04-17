@@ -1,4 +1,4 @@
-# Browserify Groceries 
+# Browserify Groceries
 
 ## Description
 
