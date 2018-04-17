@@ -10,7 +10,7 @@ const cardBuilder = (data) => {
     domString += `<img class='department-image' src='${data[i].img}'>`;
     domString += `</div>`;
   }
-  console.log(domString);
+  // console.log(domString);
   printToDom(domString);
 };
 const printToDom = (domString) => {
