@@ -20,7 +20,25 @@ const cartDomString = (items) => {
     domString +=   `</tr>`;
   });
   domString += `</table>`;
+  domString += getTotals(items);
   domString += `</div>`;
+  return domString;
+};
+
+const getTotals = (items) => {
+  let itemTotal = 0;
+  let priceTotal = 0;
+  items.forEach((item) => {
+    itemTotal += (item.purchaseNum * 1);
+    priceTotal += (item.purchaseNum * item.price);
+  });
+  return totalsString(itemTotal, priceTotal);
+};
+
+const totalsString = (itemNum, total) => {
+  let domString = '';
+  domString += `<h4>Total number of Items: ${itemNum}</h4>`;
+  domString += `<h4>Total number of Items: $${total.toFixed(2)}</h4>`;
   return domString;
 };
 
