@@ -1,7 +1,7 @@
 const dataGatekeeper = require('./dataGatekeeper');
 
 const goToDepartments = document.getElementById('go-to-departments');
-const gotoCart =document.getElementById('go-to-cart');
+const gotoCart = document.getElementById('go-to-cart');
 
 const departmentsDiv = document.getElementById('dept');
 const itemsDiv = document.getElementById('items');
@@ -12,10 +12,9 @@ const cartButton = () => {
     departmentsDiv.innerHTML = '';
     itemsDiv.innerHTML = '';
     cartDiv.innerHTML = '';
-    //print to cart dom
-  })
+    // print to cart dom
+  });
 };
-
 
 const departmentsButton = () => {
   goToDepartments.addEventListener('click', () => {
