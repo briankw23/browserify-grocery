@@ -16,7 +16,7 @@ const cartDomString = (items) => {
     domString +=     `<td>${item.name}</td>`;
     domString +=     `<td>$${item.price.toFixed(2)}</td>`;
     domString +=     `<td>${item.purchaseNum}</td>`;
-    domString +=     `<td>X</td>`;
+    domString +=     `<td><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>`;
     domString +=   `</tr>`;
   });
   domString += `</table>`;
