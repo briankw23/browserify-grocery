@@ -1,6 +1,6 @@
 let departments = [];
 let items = [];
-// let cart = [];
+const cart = [];
 
 const getDepartments = () => {
   return departments;
@@ -24,6 +24,10 @@ const getItemsByDepartment = (departmentId) => {
   return selectedItems;
 };
 
+const getCart = () => {
+  return cart;
+};
+
 const setCart = (itemId, numberToAdd) => {
   const itemPosition = items.map(function (item) {
     return item.id;
@@ -32,7 +36,7 @@ const setCart = (itemId, numberToAdd) => {
   newItem.purchaseNum = numberToAdd;
   console.log('itemPosition', items[itemPosition]);
   console.log('newItem', newItem);
-  // cart.push(newItem);
+  cart.push(newItem);
 };
 
 module.exports = {
@@ -42,4 +46,5 @@ module.exports = {
   getItems,
   getItemsByDepartment,
   setCart,
+  getCart,
 };
